@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <title>Formulario de registro</title>
+
+</head>
+ <!-- ************************** Comienzo del Nav bar ************************** -->
+ <section id="page">
+  <!-- CONTAINER FLUID -->
+<!-- <div class="container-fluid"> -->
+<nav class="navbar navbar-expand-md navbar-dark">
+  <!-- todo lo que va después de navbar-expand-md que es donde se hace resposiva -->
+  <!-- es cosas de estilo -->
+  <div class="container-fluid">
+      <a class = "navbar-brand ms-3" href="../index_TEST/index.html">
+          <span id="logo">ht&ml</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#menu" aria-controls="navbarSupportedContent"
+       aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- elementos de menu colapsable -->
+      <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto ms-auto">
+          <!-- En ul va la dirección de los items, si es me-auto se mueve a derecha-->
+          <!-- si es izq se pone ms-auto y si no tiene nada es centro creo -->
+
+              <li class="nav-item dropdown">
+                  <a href="../Catalogo/Pages/catalogo.html" class="nav-link dropdown-toggle navi" 
+                  id="navbarDropdown" role="button" 
+                  data-bs-toggle="dropdown">Catálogo</a>
+                  <!-- Esto que le voy a poner abajo es el dropdown -->
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a href="" class="dropdown-item">as</a>
+                      </li>
+                      <li>
+                          <a href="" class="dropdown-item">Ex2</a>
+                      </li>
+                      <li>
+                          <a href="" class="dropdown-item">Ex3</a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="nav-item">
+                  <a href="../Contacto_About-us/aboutUs.html" class="nav-link navi">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../Contacto_About-us/contactUs.html" class="nav-link navi">Contacto</a>
+              </li>
+          </ul>
+
+          <!-- voy a poner este hr por que ps smn, pero no sé que es -->
+          <hr class="text-white-50">
+
+          <!-- son los íconos -->
+          <ul class="navbar-nav flex-row flex-wrap text-light">
+              <!-- creo que esta madre es para que se vean mejor -->
+              <!-- navbar-nav es la clase de navbar, para que se tome con sus estilos -->
+              <li class="nav-item col-6 col-md-auto p-3">
+                  <!-- lo que los col hacen es que ahuevo sea micha y micha -->
+                  <!-- el flex row es pa que cambien de row sin pedos -->
+                  <i class="bi bi-cart fa-2x" style="font-size: 1.2rem;"></i>
+                  <small class="ms-2 navi">0</small>
+              </li>
+              <li class="nav-item col-6 col-md-auto p-3">
+                  <i class="bi bi-person-circle" style="font-size: 1.2rem;"></i>
+              </li>                        
+          </ul>
+      </div>
+  </div>
+</nav>
+</section> <!-- ************************ Cierre del navbar *************************** -->
+
+
+
+<body class="bg">
+
+
+<!-- ************************** INICIO FORMULARIO ****************************** -->
+  <form action="" class="form" style="background-image: url(../Formulario/imags/ht&ml-fondo.png); background-repeat: no-repeat; background-size: cover;" id="contact-form">
+
+    <div class="container">
+    
+      <div class="row">
+        <div class="col text-center offset-5">
+          <h2 class="fw-bold">REGISTRO</h2>
+        </div>
+
+        </div>
+      
+      <div class="row">  
+        <div class="col-3 order-1 offset-6">
+          <label for="FirstName" class="form-label">Nombre(s)</label> 
+          <input type="text" placeholder="---" name="nombres" class="form-control" required id="name">
+
+          <label for="email" class="form-label">Email</label>
+          <input type="email" placeholder="---" name="email" id="email" class="form-control" required>
+        </div> 
+ 
+        
+        <div class="col-3 order-2">
+          <label for="LastName" class="form-label">Apellido(s)</label>
+            <input type="text" placeholder="---" name="apellidos" id="apellido"  class="form-control" required>
+
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" placeholder="---" name="contraseña" class="form-control" id="password" required>
+        </div>
+        <!-- NUEVO --------------------------------------------------------------------------------->
+        <div class="col-3 order-3 offset-6">
+          <label for="FirstName" class="form-label">Calle</label> 
+          <input type="text" placeholder="---" name="calle" class="form-control" required id="calle">
+
+          <label for="colonia" class="form-label">Colonia</label>
+          <input type="email" placeholder="---" name="email" id="colonia" class="form-control" required>
+        </div> 
+        <div class="col-3 order-3">
+          <label for="cp" class="form-label">CP</label> 
+          <input type="text" placeholder="---" name="cp" class="form-control" required id="cp">
+
+          <label for="FirstName" class="form-label">Estado</label> 
+          <select class = 'form-select'name="estado" id = "sele">
+            <option value="no" style="font-family: Raleway;">Seleccione uno...</option>
+            <option value="Aguascalientes" style="font-family: Raleway;">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="CDMX">Ciudad de México</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Estado de México">Estado de México</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Michoacán">Michoacán</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Querétaro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potosí</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Yucatán">Yucatán</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+        </div> 
+        <div class="col-6 order-3 offset-6">
+          <label for="FirstName" class="form-label">Municipio</label> 
+          <input type="text" placeholder="---" name="municipio" class="form-control" required id="municipio">
+
+          
+        </div>
+        <!-- NUEVO------------------------------------------------------------------------------ -->
+      </div> <!-- CLOSE -->
+      
+      <div class="keys">
+        <div class="row py-4 offset-6">
+          <div class="col-12">
+            <!-- <div class="mb-04 form-check" >
+              <input type="checkbox" name="connected" class="form-check-input">
+              <label for="connected" class="form-check-label">Cuando te registras, aceptas nuestros <a href="#">Condiciones del Servicio</a> y <a href="#">Política de Privacidad</a></label>
+            </div> -->
+      
+            <div class="row">
+              <div class="col text-center">
+                <button type="button" class="btn" 
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 5rem; --bs-btn-font-size: 1.2rem; 
+                font-family: Raleway; font-weight:bolder;" onclick="validateForm();">
+                Registrarse
+                </button>
+              </div>
+              </div>
+              <div class="status"></div>
+
+              <hr>
+              <br>
+
+
+           
+              <div class="row py-2">
+                  <a class="btn" href="" style="background-color: #393e46;">Iniciar sesión con Facebook</a>
+                </div>  <!--Cierre facebook -->
+  
+                <div class="row">
+                    <a class="btn" href="" role="button" style="background-color: #393e46;">Iniciar sesión con Google</a>
+                </div> <!-- Cierre google-->
+
+             
+
+            </div> 
+
+          </div>
+        </div>
+      </div>
+
+  </form>
+
+  <script src="./validacion.js"></script>
+</body>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+<div id="footer" style="height: 200px;">
+  <footer style="color: #393e46; margin-top: 2%;">
+      <div class="container text-start">
+          <div class="row" id="foot">
+              <div class="col text-start">
+
+                  <!-- <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                      <span style="font-weight: bold;">Ayudas & Apoyo</span> <br><br>
+                      <div style="font-size: 0.8rem;">
+                          <li>Información de envío</li>
+                          <li>Devolución</li>
+                          <li>Cómo realizar el pedido</li>
+                          <li>Rastrear el pedido</li>
+                          <li>Guía de tallas</li>
+                          <li>FAQ</li>
+                          </di>
+                  </ul> -->
+
+              </div> 
+              <div class="col-6 text-center">
+
+                  <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                      <span style="font-weight: bold; font-size: 1.3rem;">Información</span> <br><br>
+                      <div style="font-size: 1rem;">
+                          <a href = "../Contacto_About-us/aboutUs.html" style="text-decoration: none;color: inherit"><li>Sobre nosotros</li><a >
+                          <a href="../Contacto_About-us/contactUs.html" style="text-decoration: none;color: inherit"><li>Contacto</li></a>
+                          <a href="../Formulario/index.html" style="text-decoration: none;color: inherit"><li>Regístrate</li></a>
+                          <a href="../FAQ/index copy.html" style="text-decoration: none;color: inherit"><li>FAQ's</li></a>
+                          </di>
+                  </ul>
+
+              </div>
+              <!-- <div class="col-3">
+
+                   <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                      <span style="font-weight: bold;">Únete a nuestras marcas</span> <br><br>
+                      <div style="font-size: 0.8rem;">
+                          <li>Información de envío</li>
+                          <li>Devolución</li>
+                          <li>Cómo realizar el pedido</li>
+                          <li>Rastrear el pedido</li>
+                          <li>Guía de tallas</li>
+                          <li>FAQ</li>
+                          </di>
+                  </ul> 
+
+              </div> -->
+              <div class="col-6" style="width: 40%;">
+                  <span style="font-weight: bold;">Nuestras redes</span><br>
+                  <div class="row" style="display: inline-block; font-size: 1.3rem;">
+                      <i class="bi bi-twitter"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-facebook"></i>
+                      </di>
+                      <br><br>
+                      <div class="input-group mb-3" style="width: 450px;" id="subs">
+                          <input type="text" class="form-control emaili" placeholder="Recibe noticias de nuestros productos"
+                              aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                              style="color: white; background-color: #393e46;">Subscribir</button><br><br>
+                          
+                      </div>
+                      <div id="mess3"></div>
+                      <!-- <div class="row container" style="display: inline-block;">
+                          <input type="text" placeholder="Recibe noticias de nuestros productos" size="20" style="display: block;">
+                          <button style="float: right;">asdas</button> -->
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      <br>
+      <small style="margin-left: 2%;">Copyright 2023</small>
+
+  </footer>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+</html>
+
+<!-- SE HIZO -->

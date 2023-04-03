@@ -1,0 +1,14 @@
+package generation.javongus.html.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import generation.javongus.html.repository.ProductoRespository;
+
+@Service
+public class ProductoServices {
+//	Instancia del repositiorio
+	private final ProductoRespository productoRe;
+	
+	@Autowired
+}

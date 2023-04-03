@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ht&ml-Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <section id="page">
+            <!-- CONTAINER FLUID -->
+    <!-- <div class="container-fluid"> -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- todo lo que va después de navbar-expand-md que es donde se hace resposiva -->
+            <!-- es cosas de estilo -->
+            <div class="container-fluid">
+                <a class = "navbar-brand ms-3" href="#">
+                    <span id="logo">ht&ml</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#menu" aria-controls="navbarSupportedContent"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- elementos de menu colapsable -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto ms-auto">
+                    <!-- En ul va la dirección de los items, si es me-auto se mueve a derecha-->
+                    <!-- si es izq se pone ms-auto y si no tiene nada es centro creo -->
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle navi" 
+                            id="navbarDropdown" role="button" 
+                            data-bs-toggle="dropdown">Catálogo</a>
+                            <!-- Esto que le voy a poner abajo es el dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="" class="dropdown-item">Ex1</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item">Ex2</a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item">Ex3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navi">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navi">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- voy a poner este hr por que ps smn, pero no sé que es -->
+                    <hr class="text-white-50">
+
+                    <!-- son los íconos -->
+                    <ul class="navbar-nav flex-row flex-wrap text-light">
+                        <!-- creo que esta madre es para que se vean mejor -->
+                        <!-- navbar-nav es la clase de navbar, para que se tome con sus estilos -->
+                        <li class="nav-item col-6 col-md-auto p-3">
+                            <!-- lo que los col hacen es que ahuevo sea micha y micha -->
+                            <!-- el flex row es pa que cambien de row sin pedos -->
+                            <i class="bi bi-cart fa-2x" style="font-size: 1.2rem;"></i>
+                            <small class="ms-2 navi">0</small>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto p-3">
+                            <i class="bi bi-person-circle" style="font-size: 1.2rem;"></i>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+<!-- Empezamos organizando en un div, el encabezado del form/formulario -->
+    <section class="layout-container wrapper">
+        <img src="./imgs/pexels-alena-darmel-6940625.jpg" class="regImg" alt="">
+        <!-- Creando la primera linea de codigo que contendrá nombre y apellido -->
+            <div class="regRow1">
+                <label for="FirstName" class="label-hidden">Nombre(s)</label>
+                <input type="text" class="FirstName" name="customer[first-name]" placeholder="Nombre(s)" autofocus="" required="">
+                <!-- Campo para apellidos -->
+                <label for="LastName" class="label-hidden">Apellido(s)</label>
+                <input type="text" id="LastName" name="customer[last-name]" placeholder="Apellido(s)" required="">
+            </div>
+            <div class="regRow2">
+                <!-- Campo para registro de correo -->
+                <label for="Email" class="label-hidden">Email</label>
+                <input type="text" id="Email" name="customer[email]" placeholder="Email" required="" value="" autocapitalize="none">
+                <!-- Campo para registro de contraseña -->
+                <label for="Password" class="label-hidden">Contraseña</label>
+                <input type="text" id="Password" name="customer[password]" placeholder="Contraseña" required="">
+                <!-- Aquí haremos el botón de submit -->
+            </div>
+            <div class="regRow3">
+                <button type="submit">Registrarse</button>
+                <p>Cuando te registras, aceptas nuestras Condiciones del Servicio y Política de Privacidad.</p>   
+            </div>
+        <article class="regRow4">
+            <!-- Aquí pondremos los botones para ingresar con el usuario de google y de facebook -->
+            <!-- Google -->
+            <button id="oneclick-google-login-button" title="oneclicksociallogin-devcloudsoftware">Iniciar sesión con Google</button>
+            <!-- Facebook -->
+            <button id="oneclick-facebook-login-button" title="oneclicksociallogin-devcloudsoftware">Iniciar sesión con Facebook</button>
+        </article>
+    </section>
+    
+
+    <script src="/JS/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

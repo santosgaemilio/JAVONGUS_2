@@ -1,0 +1,137 @@
+
+#page{
+    font-family: Raleway;
+    color: #ffffff;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    background-color: #ff4d49;
+}
+
+#logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+#index_nav{
+    background-color: #ff4d49;
+    color: #ffffff;
+    
+}
+
+.dropdown-item{
+   
+    color: black;
+    
+}
+
+.navi{
+    color: rgb(255, 255, 255);
+}
+
+
+
+img{
+    max-width: 100%;
+    height: 10%;
+    
+}
+
+#bod{
+    background-color: #ff4d49;
+}
+
+#navy{
+    background-color: #ff4d49;
+    margin: 0;
+    
+    padding:0;
+    max-width: 100%;
+}
+
+#logo_2{
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* @media screen and (max-width: 1200px){
+    #img_pg{
+        content: url(/imgs/urba6.png);
+    }
+} */
+
+/* 
+Esta madre de la query lo voy a hacer en JS
+*/
+
+/* TES TES TES TES TEST TEST TEST */
+html, body, #wrapper {
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
+    border: 0;
+}
+ #wrapper td {
+    vertical-align: middle;
+    text-align: center;
+ }
+
+ #toggy {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  /* .custom-toggler .navbar-toggler {
+    border-color: rgb(0, 0, 0);
+  }  */
+
+  #catSep{
+    max-width: 80%;
+    text-align: center;
+  }
+
+  #ub{
+    position: relative;
+  }
+  /* #ubBT{
+    position:absolute;
+    bottom: 100px;
+    left: 45%;
+  } */
+
+  #jc{
+    position: relative;
+  }
+
+  #js{
+    position: relative;
+  }
+
+  #login{
+    background-color: #FF4D48;
+    border-style: none;
+    color: #ffffff;
+  }
+
+  #exampleModal2{
+    color: black;
+  }
+
+  #singin{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom:1%;
+    margin-left: 35%;
+    background-color: #393e46;
+    border-color: #393e46;
+  
+  }
+
+  #svch{
+    background-color: #7286d3;
+    border-color: #393e46;
+  }

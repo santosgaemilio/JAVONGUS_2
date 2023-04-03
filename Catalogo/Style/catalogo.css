@@ -1,0 +1,157 @@
+
+
+*{user-select: none;} 
+*::-webkit-scrollbar{ 
+    width: 2px;
+}
+/*Estilos para el navBar*/
+#page{
+    font-family: Raleway;
+    color: #ffffff;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    background-color: #393e46;
+
+}
+#nav{
+    background-color: #393e46;
+    position: sticky;
+    top: 0;
+}
+#logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#index_nav{
+    background-color: #393e46;
+    color: #ffffff;
+    
+}
+.dropdown-item{
+    background-color: black;
+    color: black;  
+}
+.navi{
+    color: rgb(255, 255, 255);
+}
+#navy{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+    background-color: #393e46;
+}
+#logo_2{
+    height: 40px;
+    margin-top: 5px;
+}
+.dropbrand {
+    background-color: #393e46;
+    color: #ffffff;
+}
+.dropbrand1{
+    background-color: #393e46;
+    color: #ffffff;
+}
+#login{
+    background-color: #393e46;
+}
+/*Terminan estilos para el navBar*/
+
+
+
+/*Estilos para la section, donde van todos los productos*/
+#section{
+    font-family: Raleway;
+    justify-content: space-evenly;
+    padding: auto;
+    padding-top:20px ;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 320px ));
+}
+/*Estilos para que todas las imagenes esten del mismo tamaño*/
+img{
+    min-height: 399px;
+    max-width: 300px; 
+    min-width: 300px;
+   
+    transition: all 1s;
+    border-radius: 20px;
+    border:solid 2px #000;
+}
+
+/*Estilos para la tarjeta que genera cada producto*/
+.cardProduct{
+    display: flex;
+    flex-direction: column;
+    color: #000; 
+    height: max-content;
+    width: max-content;
+}
+.divImg{
+    width: min-content;
+    max-height:399px;
+    overflow: hidden;
+
+}
+.cardProduct a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+
+}
+
+/*Con estos estios logramos el efecto de deslizamiento para ver ambas imagenes*/
+.divImg:hover .front{
+    transform: translateY(-400px);
+}
+.divImg:hover .back{
+    transform: translateY(-399px);
+}
+.cardProduct>div:nth-child(2n){
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 5px;
+    align-content: center;
+}
+/*Esta regla le da estilos a cada uno de los circulos para el cambio de color*/
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    border:solid 2px #000;
+}
+/*Esta es la regla que se la aplica a los circulos que estan seleccionados*/
+.selected{
+    border:solid 2px green;
+    transform: scale(1.3);
+}
+/*Esta regala alinea los circulos de manera horizontal*/
+.cardProduct>div>div{
+    display: flex;
+}
+/*Regla para el estilo de la descripcion del producto*/
+.description{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    margin: auto;
+    padding: 0px 15px 0 15px;
+    border-top: 2px solid #000;
+}
+/*Estilos que se le da al mensaje que aparece tras no haber encontrado el producto que se requirio*/
+.mensajeError{
+    color: #000;
+    font-size: 30px;
+    border: solid 3px #900;
+    height: max-content;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}

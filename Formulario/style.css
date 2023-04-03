@@ -1,0 +1,123 @@
+/* CSS DEL NAVBAR */
+#page {
+  font-family: Raleway;
+  color: #ffffff;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  background-color: #393E46;
+  
+}
+#logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+#index_nav {
+  background-color: #393E46;
+  color: #ffffff;
+  
+}
+
+.dropdown-item{
+  background-color: black;
+  color: black;
+  
+}
+
+.navi{
+  color: rgb(255, 255, 255);
+}
+
+img{
+  max-width: 100%;
+  
+}
+
+#bod{
+  background-color: #393E46;
+}
+
+#navy{
+  margin: 0;
+  padding:0;
+  max-width: 100%;
+}
+
+#logo_2{
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px){
+  #urbanot1{
+      content: url(/imgs/urba6.png);
+  }
+} /* ******************** CIERRE NAVBAR ******************* */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
+
+
+button.btn {
+  background-color: #7286D3;
+  color: white;
+  border-style: solid;
+  border-color: #393E46;
+}
+
+button.btn:hover {
+  background-color: #E5E0FF;
+  color: #7286D3;
+  border-color: white;
+}
+
+a.btn {
+  border-color: white;
+  border-width: .1rem;
+  color: white;
+}
+
+a.btn:hover {
+  background-color: #E5E0FF;
+  color: #7286D3;
+}
+/*body {
+  background-image: url("imags/ht&ml-fondo.png");
+  /* background-repeat: no-repeat; */
+  /* width: 50%; 
+
+.bg {
+  width: 95%;
+  padding-left: 20%;
+}
+
+html, body {
+  height: 100%;
+} */
+
+.form {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Raleway';
+} 
+
+.logos {
+  width: 1.5rem;
+}
+
+.sele{
+  font-family: Raleway;
+}

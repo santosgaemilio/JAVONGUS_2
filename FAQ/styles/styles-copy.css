@@ -1,0 +1,23 @@
+
+button.btn {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 15px;
+}
+
+button.btn:hover {
+  background-color: #E5E0FF;
+  color: #7286D3;
+}
+
+a.btn {
+  border-color: white;
+  border-width: .1rem;
+  color: white;
+}
+
+a.btn:hover {
+  background-color: #E5E0FF;
+  color: #7286D3;
+}

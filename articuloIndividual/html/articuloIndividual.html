@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo individual</title>
+
+    <!-- bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../css/articuloIndividual.css">
+    <!-- Font Raleway -->
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Estilo en linea de galeria individual -->
+
+
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .buy-btn {
+            background: #393E46;
+            opacity: 1;
+            transition: 0.3s all;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- boton desplegable -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- jquery and js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--! navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navy">
+        <!-- todo lo que va después de navbar-expand-md que es donde se hace resposiva -->
+        <!-- es cosas de estilo -->
+        <div class="container-fluid">
+            <a href="../../index_TEST/index.html" class="navbar-brand ms-3" href="#navy">
+                <span id="logo">ht&ml</span>
+            </a>
+            <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="custom-toggler navbar-toggler-icon" id="toggy"></span>
+            </button>
+
+            <!-- elementos de menu colapsable -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto ms-auto">
+                    <!-- En ul va la dirección de los items, si es me-auto se mueve a derecha-->
+                    <!-- si es izq se pone ms-auto y si no tiene nada es centro creo -->
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle navi" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">Catálogo</a>
+                        <!-- Esto que le voy a poner abajo es el dropdown -->
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">urbaNOT</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Javucci</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">JSpenny</a>
+                            </li>
+                            <li>
+                                <hr class="text-black-50">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Catálogo completo</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link navi">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link navi">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- voy a poner este hr por que ps smn, pero no sé que es -->
+                <hr class="text-white-50">
+
+                <!-- son los íconos -->
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <!-- creo que esta madre es para que se vean mejor -->
+                    <!-- navbar-nav es la clase de navbar, para que se tome con sus estilos -->
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <!-- lo que los col hacen es que ahuevo sea micha y micha -->
+                        <!-- el flex row es pa que cambien de row sin pedos -->
+                        <i class="bi bi-cart fa-2x navi_i" style="font-size: 1.2rem;"></i>
+                        <small class="ms-2 navi">6</small>
+                    </li>
+                    <!-- Login thingy -------------------------------------------------------------- -->
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <!-- Button trigger modal -->
+                        <button type="" class="" data-bs-toggle="modal" data-bs-target="#exampleModal2" id="login">
+                            <i class="bi bi-person-circle navi_i" style="font-size: 1.2rem;"></i>
+                        </button>
+
+
+
+                    </li>
+                    <!--  ----------------------------------------------------------------------------->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Modal thingy--------------------------------- -->
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form2Example1" class="form-control" placeholder="Email address" />
+                            <!-- <label class="form-label" for="form2Example1">Email address</label> -->
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form2Example2" class="form-control" placeholder="Password" />
+                            <!-- <label class="form-label" for="form2Example2">Password</label> -->
+                        </div>
+
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                            <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="form2Example31"
+                                        checked />
+                                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Forgot password?</a>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-primary btn-block text-center" id="singin">Sign in</button>
+
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <p>Not a member? <a href="#!">Register</a></p>
+                        </div>
+                    </form>
+
+                    <!-- ------------------------------------------ -->
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="svch">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!--! termina navegacion -->
+
+
+
+    <!--! articulo individual -->
+
+    <section class=" container sproduct my-5 pb-5">
+        <!--TODO Galeria parte izquierda -->
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="../img/camisa4c/1_white.png" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <!--TODO imagen pequeña 1 -->
+                    <div class="small-img-col">
+                        <img src="../img/camisa4c/1_white.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <!--TODO imagen pequeña 2 -->
+                    <div class="small-img-col">
+                        <img src="../img/camisa4c/2_white.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <!--TODO imagen pequeña 3 -->
+                    <div class="small-img-col">
+                        <img src="../img/camisa4c/3_white.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <!--TODO imagen pequeña 4 -->
+                    <div class="small-img-col">
+                        <img src="../img/camisa4c/4_white.png" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--TODO Informacion galeria parte derecha -->
+            <div class="col-lg-6 col-md-12 col-12">
+                <h5>Marca: urbaNOT</h5>
+                <h3>Camisa solida sin estampado de algodón transpirable</h3>
+                <h6 class="mt-5 mb-0">SKU: PLAYS3C001</h6>
+                <div class="starsAndReviews">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="reviews">
+                        <h6>(800+ Reviews)</h6>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <h2>$289.00</h2>
+
+                <!--TODO agregar colores interactivos -->
+                <div class="color-content">
+                    <h3>select color</h3>
+                    <div class="color-groups">
+                        <div class="color color-white active-color"></div>
+                        <div class="color color-black "></div>
+                        <div class="color color-yellow"></div>
+                        <div class="color color-blue"></div>
+                        <div class="color color-red"></div>
+
+                    </div>
+                </div>
+
+
+                <select class="my-3">
+                    <option>Selecciona talla</option>
+                    <option>CH</option>
+                    <option>M</option>
+                    <option>G</option>
+                </select>
+
+                <!--! guia de talla -->
+                <div class="tallas">
+                    <div class="tallas-header">
+                        <div class="tallas-toggle" onclick="toggleTable()">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Guia de tallas (cm)</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <table class="tallas-table" id="tabla-tallas">
+                        <thead>
+                            <tr>
+                                <th>Talla</th>
+                                <th>Hombro</th>
+                                <th>Largo</th>
+                                <th>Largo de la manga</th>
+                                <th>Pecho</th>
+                                <th>Contorno bíceps</th>
+                                <th>Puño</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>44.5</td>
+                                <td>72</td>
+                                <td>21.5</td>
+                                <td>105</td>
+                                <td>40.6</td>
+                                <td>36.8</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>46</td>
+                                <td>74</td>
+                                <td>22</td>
+                                <td>109</td>
+                                <td>42</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>47.8</td>
+                                <td>76</td>
+                                <td>22.5</td>
+                                <td>114</td>
+                                <td>43.8</td>
+                                <td>39.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <!-- termina guia de talla -->
+
+                <button class="buy-btn"><a href="../../Carrito/pags/carrito.html"
+                        style="text-decoration: none; color: inherit;">Añadir a carrito</a></button>
+                <!--* Detalles de envio y garantia -->
+
+                <div class="mt-3 mb-3"
+                    style="background-color: rgba(236, 233, 233, 0.266); width: 500px; height: 170px; padding: 10px;">
+                    <div style="display: flex; align-items: center;">
+                        <i class="fas fa-truck-fast"></i>
+                        <span style="margin-left: 10px;"><strong>Envío gratuito</strong><br> Para pedidos mayores a
+                            $MXN200</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-top: 10px;">
+                        <i class="far fa-clock"></i>
+                        <span style="margin-left: 10px;">Entrega de 2-4 días hábiles</span>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <div class="encabezado" style="margin-left: 25px;"><strong>Devolución gratis</strong></div>
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-shield-alt"></i>
+                            <a href="../../FAQ/index copy.html"
+                                style="margin-left: 10px; color: #007bff; text-decoration: none;">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Terminan detalles de envio -->
+
+
+                <!--TODO Colapso botones -->
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item" style="max-width: 700px; margin-top: 50px;">
+                        <h2 class="accordion-header" id="flush-headingOne">
+
+                            <div class="d-grid gap-2"> <!--con esto logre hacer más largo el boton-->
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne"
+                                    style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                                    Descripción
+                                </button>
+                            </div>
+
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <table>
+                                    <tr>
+                                        <td>Estilo:</td>
+                                        <td>Casual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo de Estampado:</td>
+                                        <td>Liso</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo:</td>
+                                        <td>Camisa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Escote:</td>
+                                        <td>Cuello Camisero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Detalles:</td>
+                                        <td>Botón delantero</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Longitud de la Manga:</td>
+                                        <td>manga corta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipos de Manga:</td>
+                                        <td>Manga normal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Longitud:</td>
+                                        <td>Normal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo de ajuste:</td>
+                                        <td>Regular</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tejido:</td>
+                                        <td>No-Elástico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Material:</td>
+                                        <td>Satén</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Composición:</td>
+                                        <td>100% Poliéster</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Transparente:</td>
+                                        <td>No</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" style="max-width: 700px;">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+
+                            <div class="d-grid gap-2">
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo"
+                                    style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                                    Cuidados
+                                </button>
+
+                            </div>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <table>
+                                    <tr>
+                                        <td>Instrucciones de Cuidado:</td>
+                                        <td>Lavadora, no limpiar en seco</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <!--! termina accordion -->
+
+
+
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <!--! Lo más vendido del mes -->
+    <section id="featured">
+        <!-- agregar margen con respecto a otros elementos -->
+        <div class="container text-center mt-5 py-5">
+            <h3>Lo más vendido del mes</h3>
+            <hr class="mx-auto">
+
+        </div>
+        <div class="row mx-auto container-fluid">
+            <!--* Producto 1 sudadera1 -->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="../img/masVendido/1.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Zapatilla deportiva blanca</h5>
+                <h4 class="p-price">$MXN 428 </h4>
+                <button class="buy-btn">Ver detalles</button>
+            </div>
+            <!--* Producto 2 pantalon -->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="../img/masVendido/2.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Sneaker rojo urbano</h5>
+                <h4 class="p-price">$MXN 455 </h4>
+                <button class="buy-btn">Ver detalles</button>
+            </div>
+            <!--* Producto 3 playera -->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="../img/masVendido/3.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Mochila azul casual</h5>
+                <h4 class="p-price">$MXN 328 </h4>
+                <button class="buy-btn">Ver detalles</button>
+            </div>
+            <!-- Producto 4 playera -->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="../img/masVendido/4.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Gorro de lana</h5>
+                <h4 class="p-price">$MXN 170 </h4>
+                <button class="buy-btn">Ver detalles</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!--TODO Mostrar en grande imagen pequeña -->
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallImg = document.getElementsByClassName('small-img');
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+
+    </script>
+
+
+    <!--! Footer -->
+
+    <div id="footer">
+        <footer style="color: #393e46; border-top: 1px solid #acacac7a;">
+            <div class="container">
+                <div class="row flex-column flex-md-row">
+                    <div class="col-md-4">
+                        <!-- Información -->
+                        <h4 style="font-weight: bold; font-size: 1.3rem;">Información</h4>
+                        <ul style="list-style-type: none; padding-left: 0; word-break: break-word;">
+                            <li><a class="d-flex" href="../../Contacto_About-us/aboutUs.html" style="text-decoration: none;color: inherit">Sobre nosotros</a></li>
+                            <li><a class="d-flex" href="../../Contacto_About-us/contactUs.html" style="text-decoration: none;color: inherit">Contacto</a></li>
+                            <li><a  class="d-flex" href="../../Formulario/index.html" style="text-decoration: none;color: inherit">Regístrate</a></li>
+                            <li><a class="d-flex" href="../../FAQ/index copy.html" style="text-decoration: none;color: inherit">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center mt-3 mt-md-0 mb-3 mb-md-0">
+                        <!-- Redes sociales -->
+                        <h4 style="font-weight: bold;">Nuestras redes</h4>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-twitter" style="font-size: 1.3rem;"></i>
+                            <i class="bi bi-instagram" style="font-size: 1.3rem; margin-left: 20px;"></i>
+                            <i class="bi bi-facebook" style="font-size: 1.3rem; margin-left: 20px;"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Suscripción -->
+                        <h4 style="font-weight: bold;">Suscribirse</h4>
+                        <form>
+                            <div class="input-group">
+                                <input type="email" class="form-control"
+                                    placeholder="Recibe noticias de nuestros productos" aria-label="Email"
+                                    aria-describedby="button-addon2" required>
+                                <button class="btn btn-primary" type="submit" id="button-addon2"
+                                    style="background-color: #393e46; color: white;">Subscribir</button> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <small style="margin-left: 2%;">Copyright 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+                    
+    <!--! Enlace a Javascript -->
+
+
+    <script src="..//js/articuloIndividual.js"></script>
+
+
+
+</body>
+
+</html>

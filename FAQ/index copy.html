@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles-copy.css">
+  <link rel="stylesheet" href="./styles/Nav bar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+
+
+</head>
+
+<div style="font-family: Raleway;">
+  <!-- ************* Comienzo del nav bar *********** -->
+  <div id="page">
+    <!-- CONTAINER FLUID -->
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <!-- todo lo que va después de navbar-expand-md que es donde se hace resposiva -->
+      <!-- es cosas de estilo -->
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="../index_TEST/index.html">
+          <span id="logo">ht&ml</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- elementos de menu colapsable -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto ms-auto">
+            <!-- En ul va la dirección de los items, si es me-auto se mueve a derecha-->
+            <!-- si es izq se pone ms-auto y si no tiene nada es centro creo -->
+  
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle navi" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown">Catálogo</a>
+              <!-- Esto que le voy a poner abajo es el dropdown -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="dropdown-item">Ex1</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item">Ex2</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item">Ex3</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#" class="nav-link navi">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link navi">Contacto</a>
+            </li>
+          </ul>
+  
+          <!-- voy a poner este hr por que ps smn, pero no sé que es -->
+          <hr class="text-white-50">
+  
+          <!-- son los íconos -->
+          <ul class="navbar-nav flex-row flex-wrap text-light">
+            <!-- navbar-nav es la clase de navbar, para que se tome con sus estilos -->
+            <li class="nav-item col-6 col-md-auto p-3">
+              <!-- lo que los col hacen es que ahuevo sea micha y micha -->
+              <!-- el flex row es pa que cambien de row sin pedos -->
+              <i class="bi bi-cart fa-2x" style="font-size: 1.2rem;"></i>
+              <small class="ms-2 navi">0</small>
+            </li>
+            <li class="nav-item col-6 col-md-auto p-3">
+              <i class="bi bi-person-circle" style="font-size: 1.2rem;"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ********************** CIERRE DE NAV BAR **************************** -->
+  
+  
+  
+  <body>
+    <main>
+  
+  
+      <section class="container-fluid" style="background-color: white;">
+        <div class="row justify-content-end">
+  
+  
+          <div class="col">
+  
+            <img src="./img/pexels-photo-9399721.jpeg" class="img-fluid" alt="responsive image">
+  
+          </div>
+  
+          <div class="col-7">
+            <h2 class="titulo" style="margin: 25px 100px 0px;">
+              FREQUENTLY ASKED QUESTIONS
+            </h2>
+  
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item" style="max-width: 700px; margin-top: 50px;">
+                <h2 class="accordion-header" id="flush-headingOne">
+  
+                  <div class="d-grid gap-2"> <!--con esto logre hacer más largo el boton-->
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      What makes ht&ml products different?
+                    </button>
+                  </div>
+  
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingTwo">
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      Are ht&ml products available outside of the United States?
+                    </button>
+  
+                  </div>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingThree">
+  
+                  <div class="d-grid gap-2">
+  
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      I made a mistake on my order! What do I do next?
+                    </button>
+                  </div>
+  
+  
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingFour">
+  
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      What's your return policy?
+                    </button>
+  
+                  </div>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingFive">
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      When will my order be processed?
+                    </button>
+                  </div>
+  
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingSix">
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      How can I know my size?
+                    </button>
+                  </div>
+  
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingSeven">
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      What materials are ht&ml products made out of?
+                    </button>
+  
+                  </div>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item" style="max-width: 700px;">
+                <h2 class="accordion-header" id="flush-headingEight">
+  
+                  <div class="d-grid gap-2">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight" style="font-size: raleway; font-weight: 600; font-size: 18px;">
+                      What happens if I make the wrong size choice?
+                    </button>
+  
+                  </div>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+  
+  
+            </div>
+      </section>
+    </main>
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="show.js"></script>
+  </body>
+  
+  <!-- -------------------------------------------------------------- -->
+  <div id="footer" style="height: 200px;">
+    <footer style="color: #393e46; margin-top: 2%;">
+        <div class="container text-start">
+            <div class="row" id="foot">
+                <div class="col text-start">
+
+                    <!-- <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                        <span style="font-weight: bold;">Ayudas & Apoyo</span> <br><br>
+                        <div style="font-size: 0.8rem;">
+                            <li>Información de envío</li>
+                            <li>Devolución</li>
+                            <li>Cómo realizar el pedido</li>
+                            <li>Rastrear el pedido</li>
+                            <li>Guía de tallas</li>
+                            <li>FAQ</li>
+                            </di>
+                    </ul> -->
+
+                </div> 
+                <div class="col-6 text-center">
+
+                    <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                        <span style="font-weight: bold; font-size: 1.3rem;">Información</span> <br><br>
+                        <div style="font-size: 1rem;">
+                            <a href = "../Contacto_About-us/aboutUs.html" style="text-decoration: none;color: inherit"><li>Sobre nosotros</li><a >
+                            <a href="../Contacto_About-us/contactUs.html" style="text-decoration: none;color: inherit"><li>Contacto</li></a>
+                            <a href="../Formulario/index.html" style="text-decoration: none;color: inherit"><li>Regístrate</li></a>
+                            <a href="../FAQ/index copy.html" style="text-decoration: none;color: inherit"><li>FAQ's</li></a>
+                            </di>
+                    </ul>
+
+                </div>
+                <!-- <div class="col-3">
+
+                     <ul style="list-style-type: none; text-align: left; list-style: none; padding-left: 0;">
+                        <span style="font-weight: bold;">Únete a nuestras marcas</span> <br><br>
+                        <div style="font-size: 0.8rem;">
+                            <li>Información de envío</li>
+                            <li>Devolución</li>
+                            <li>Cómo realizar el pedido</li>
+                            <li>Rastrear el pedido</li>
+                            <li>Guía de tallas</li>
+                            <li>FAQ</li>
+                            </di>
+                    </ul> 
+
+                </div> -->
+                <div class="col-6" style="width: 40%;">
+                    <span style="font-weight: bold;">Nuestras redes</span><br>
+                    <div class="row" style="display: inline-block; font-size: 1.3rem;">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        </di>
+                        <br><br>
+                        <div class="input-group mb-3" style="width: 450px;" id="subs">
+                            <input type="text" class="form-control emaili" placeholder="Recibe noticias de nuestros productos"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                style="color: white; background-color: #393e46;">Subscribir</button><br><br>
+                            
+                        </div>
+                        <div id="mess3"></div>
+                        <!-- <div class="row container" style="display: inline-block;">
+                            <input type="text" placeholder="Recibe noticias de nuestros productos" size="20" style="display: block;">
+                            <button style="float: right;">asdas</button> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <small style="margin-left: 2%;">Copyright 2023</small>
+
+    </footer>
+</div>
+  <!-- -------------------------------------------------------------------- -->
+</div >
+
+
+
+
+</html>

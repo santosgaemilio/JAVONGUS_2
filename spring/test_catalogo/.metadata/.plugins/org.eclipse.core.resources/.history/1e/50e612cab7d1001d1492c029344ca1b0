@@ -1,0 +1,11 @@
+package generation.javongus.html.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import generation.javongus.html.model.Direccion;
+
+
+
+public interface DireccionRepository extends JpaRepository<Direccion, Long> {
+	
+}

@@ -1,0 +1,46 @@
+package generation.javongus.html.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import generation.javongus.html.model.Producto;
+import generation.javongus.html.services.ProductoServices;
+
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@CrossOrigin(origins = "*", 
+methods = { RequestMethod.GET, RequestMethod.POST, 
+		RequestMethod.DELETE, RequestMethod.PUT })
+@RestController
+@RequestMapping(path = "/html/catalogo/")
+public class ProductoController {
+	
+	private final ProductoServices productoSer;
+	
+	@Autowired
+	public ProductoController(ProductoServices productoSer) {
+		this.productoSer = productoSer;
+	}
+	
+//	HTTP GET
+	@GetMapping
+	public List<Producto> getProducto() {
+		return productoSer.leerProductos();
+	}
+	@GetMapping(path = "{prodId}") 
+	public Producto getProducto(Long prodId) {
+		return productoSer.leerProducto(prodId);
+	}
+	@GetMapping(path = "{start,end}")
+	public List<Producto> getProducto(Double start, Double end){
+		return productoSer.precioProducto(start, end);
+	}
+//	HTTP POST
+	
+}

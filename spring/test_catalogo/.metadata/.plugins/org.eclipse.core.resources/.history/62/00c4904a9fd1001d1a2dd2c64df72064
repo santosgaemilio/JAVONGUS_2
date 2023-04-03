@@ -1,0 +1,5 @@
+package generation.javongus.html.repository;
+
+public class UsuarioRepository {
+
+}

@@ -1,0 +1,39 @@
+package generation.javongus.html.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import generation.javongus.html.model.Producto;
+import generation.javongus.html.repository.ProductoRespository;
+
+@Service
+public class ProductoServices {
+//	Instancia del repositiorio
+	private final ProductoRespository productoRe;
+
+	@Autowired
+	public ProductoServices(ProductoRespository productoRe) {
+		this.productoRe = productoRe;
+	}
+	
+//	CREATE
+//	READ
+	public List<Producto> leerProductos() {
+		return productoRe.findAll();
+	}
+	public Producto leerProducto(Long id) {
+		return productoRe.findById(id).orElseThrow(()-> new IllegalStateException("El producto"
+				+ "con el id" +id+  " no existe"));
+	}
+	// Encuentra productos dentro del límite de precios	
+	public Optional<List<Producto>> precioProducto(Double start, Double end){
+		return productoRe.findByPrecioBetween(start, end);
+	}
+	
+//	UPDATE
+//	DELETE
+	
+}

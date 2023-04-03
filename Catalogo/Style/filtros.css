@@ -1,0 +1,117 @@
+
+/*Estilo para el aside retraible*/
+#aside{
+    position: sticky;
+    top:76px;
+    height: 80%;
+}
+#aside li{
+    font-size:calc(1vw / 1vh);
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+/*Terminan estilos para el aside retraible*/
+
+/*Estilos para los input tipo check*/
+.check {
+	display: none;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 19px;
+	border: 2px solid #7286d3;
+	border-radius: 30px;
+	cursor: pointer;
+    margin-right:7px ;
+}
+.switch > * {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.switch__ball {
+	left: 1px;
+	z-index: 10;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+    margin-bottom: .5px;
+	background-color: #7286d3;
+	border-radius: 50%;
+	transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+}
+
+.check:checked +.switch__ball {
+	transform: translate(20px, -50%);
+    background-color: #fff2f2;
+}
+/*Terminan estilos para los inputs check*/
+
+
+/*Estilos para los range*/
+input[type="range"]::-moz-range-progress{
+    background-color: #7286d3;
+}
+input[type="range"]::-moz-range-thumb{
+    background-color: #393e46;
+    border:solid #fff 2px;
+    box-shadow:0px 0px 7px 4px rgba(213, 213, 213, 0.26);
+    
+}
+input[type='range']::-moz-range-track{
+background-color: #929aab
+}
+input[type='range']{
+    background-color: #393e46;
+}
+
+/*Terminan estilos para los range*/
+
+
+/*Estilos para el boton de limpiar filtro*/
+.button {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    border: 2px solid #7286d3;
+    padding: 7px;
+    width: 90%;
+    overflow: hidden;
+    transition: color 1s;
+    background-color: #7286d3;
+    z-index: 1;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    width: 170%;
+    height: 100%;
+    background-color: #393e46;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+.button:hover::before {
+    transform: scaleX(1) skewX(35deg);
+}
+/*Terminan estilos del boton*/

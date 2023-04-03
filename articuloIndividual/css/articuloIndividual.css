@@ -1,0 +1,399 @@
+body{
+    font-family: raleway;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0FA3F5;
+}
+h6{
+    color: #CECECE;
+    margin: 0px;
+}
+
+/* Ver detalles */
+
+
+
+/* boton colapso */
+
+
+button.btn {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  button.btn:hover {
+    background-color: #E5E0FF;
+    color: #7286D3;
+  }
+  
+  a.btn {
+    border-color: white;
+    border-width: .1rem;
+    color: white;
+  }
+  
+  a.btn:hover {
+    background-color: #E5E0FF;
+    color: #7286D3;
+  }
+
+/* termina colapso */
+
+/* tabla */
+
+.tallas {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tallas-header {
+    background-color: rgba(236, 233, 233, 0.266);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px #dfdada;
+  }
+  
+  .tallas-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tallas-toggle span {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .tallas-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+  }
+  
+  .tallas-table th,
+  .tallas-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .tallas-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .toggle-button {
+    margin-right: 20px;
+    
+  }
+  
+  
+
+.accordion-header, .accordion-collapse {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    
+}
+
+/*! colores seleccion */
+
+.color-content{
+    margin-top: .3rem;
+}
+.color-content h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.color{
+    width: 23px;
+    height: 23px;
+    background: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.s ease;
+}
+.color-black{
+    background-color: #242424;
+}
+.color-blue{
+    background-color: #085ea0;
+}
+.color-yellow{
+    background-color: #c0b50d;
+}
+.color-red{
+    background-color: #8b0516;
+}
+.color-white{
+    background-color: #ededed;
+}
+.color:hover{
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.active-color{ 
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out
+}
+  
+.color-groups{
+    padding: 1rem 0;
+    display: flex;
+}
+
+
+
+
+/* Botones */
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #7E93DC;
+    color: white;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3 ease;
+
+}
+
+button:hover{
+    background-color: #7E93DC;
+}
+
+
+
+/* formato estrellas */
+.star {
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.starsAndReviews {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  
+  
+  .reviews {
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+  
+
+/* Product */
+
+    /* Agregar opacidad al seleccionar */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3 all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+    /* Ocultar boton */
+
+.product .buy-btn{
+    background: #393E46;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    
+    transform: translateY(0px);
+    opacity: 1;
+   
+}
+
+
+/*! navbar */
+
+
+#page{
+    font-family: Raleway;
+    color: #ffffff;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    background-color: #393e46;
+}
+
+#logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+#index_nav{
+    background-color: #393e46;
+    color: #ffffff;
+    
+}
+
+.dropdown-item{
+   
+    color: black;
+    
+}
+
+.navi{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+#bod{
+    background-color: #393e46;
+}
+
+#navy{
+    background-color: #393e46;
+    margin: 0;
+    
+    padding:0;
+    max-width: 100%;
+}
+
+#logo_2{
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/* @media screen and (max-width: 1200px){
+    #img_pg{
+        content: url(/imgs/urba6.png);
+    }
+} */
+
+/* 
+Esta madre de la query lo voy a hacer en JS
+*/
+
+/* TES TES TES TES TEST TEST TEST */
+html, body, #wrapper {
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
+    border: 0;
+}
+ #wrapper td {
+    vertical-align: middle;
+    text-align: center;
+ }
+
+ #toggy {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  /* .custom-toggler .navbar-toggler {
+    border-color: rgb(0, 0, 0);
+  }  */
+
+  #catSep{
+    max-width: 80%;
+    text-align: center;
+  }
+
+  #ub{
+    position: relative;
+  }
+  /* #ubBT{
+    position:absolute;
+    bottom: 100px;
+    left: 45%;
+  } */
+
+  #jc{
+    position: relative;
+  }
+
+  #js{
+    position: relative;
+  }
+
+  #login{
+    background-color: #393e46;
+    border-style: none;
+    color: #ffffff;
+  }
+
+  #exampleModal2{
+    color: black;
+  }
+
+  #singin{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom:1%;
+    margin-left: 35%;
+    background-color: #393e46;
+    border-color: #393e46;
+  
+  }
+
+  #svch{
+    background-color: #7286d3;
+    border-color: #393e46;
+  }

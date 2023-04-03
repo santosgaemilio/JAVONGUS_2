@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;html&apos;&#x0D;&#x0A;- Original project: &apos;html&apos;&#x0D;&#x0A;- Original element: &apos;generation.javongus.html.repository.UsuarioRepositorio.java&apos;" description="Delete element" element1="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;generation.javongus.html.repository{UsuarioRepositorio.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1680471673036" subPackages="false" version="1.0"/>
+</session>

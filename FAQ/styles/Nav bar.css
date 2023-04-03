@@ -1,0 +1,58 @@
+/* CSS DEL NAVBAR */
+#page {
+  font-family: Raleway;
+  color: #ffffff;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  background-color: #393E46;
+  
+}
+#logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+#index_nav {
+  background-color: #393E46;
+  color: #ffffff;
+  
+}
+
+.dropdown-item{
+  background-color: black;
+  color: black;
+  
+}
+
+.navi{
+  color: rgb(255, 255, 255);
+}
+
+
+/*Esto hace que mi imagen se vea a media pantalla o en toda*/
+/* img{
+  max-width: 100%;
+  
+} */
+
+#bod{
+  background-color: #393E46;
+}
+
+#navy{
+  margin: 0;
+  padding:0;
+  max-width: 100%;
+}
+
+#logo_2{
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+ /* ******************** CIERRE NAVBAR ******************* */

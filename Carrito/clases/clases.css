@@ -1,0 +1,76 @@
+
+.negritas{
+
+    font-weight: bold;
+
+}
+
+#login{
+    background-color: #393e46;
+    border-style: none;
+    color: #ffffff;
+  }
+
+#navy2{
+    background-color: #393e46;
+    margin: 0;
+
+    padding:0;
+    max-width: 100%;
+}
+
+.fondoPrincipal{
+    font-family: Raleway;
+    background-color: #eeeeee;
+
+}
+
+.scroll{
+    position: sticky;
+}
+
+.articulos{
+
+    background-color: #ffffff;
+    border-style: none;
+
+}
+
+.formasDePago{
+    
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 200px;
+    
+}
+
+.imagenArticulo{
+
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    float: inline-start;
+
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.textoArticulos{
+
+    font-weight: bold;
+
+}
+
+.botonPago{
+
+    align-self: center;
+}
+
+.botonImg{
+
+    border-style: none;
+
+}

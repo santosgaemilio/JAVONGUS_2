@@ -1,0 +1,22 @@
+package generation.javongus.html.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import generation.javongus.html.model.Direccion;
+import generation.javongus.html.repository.DireccionRepository;
+
+public class DireccionServices {
+//	Instancia
+	private final DireccionRepository direccionRe;
+
+	@Autowired
+	public DireccionServices(DireccionRepository direccionRe) {
+		this.direccionRe = direccionRe;
+	}
+	
+//	CREATE
+	public void crearDireccion(Direccion direccion) {
+		direccionRe.save(direccion);
+	}
+	
+}

@@ -1,0 +1,29 @@
+package generation.javongus.html.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import generation.javongus.html.model.Producto;
+import generation.javongus.html.repository.ProductoRespository;
+
+@Service
+public class ProductoServices {
+//	Instancia del repositiorio
+	private final ProductoRespository productoRe;
+
+	@Autowired
+	public ProductoServices(ProductoRespository productoRe) {
+		this.productoRe = productoRe;
+	}
+	
+//	CREATE
+//	READ
+	public List<Producto> leerProductos() {
+		return productoRe.findAll();
+	}
+//	UPDATE
+//	DELETE
+	
+}

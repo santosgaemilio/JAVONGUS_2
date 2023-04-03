@@ -1,0 +1,227 @@
+[
+    {
+        "id": "playeraPoker",
+        "title": "Camisa Poker",
+        "marca": "UrbaNOT",
+        "price": 159.00,
+        "descripcion": "Camisa Poker bi color",
+        "codigo": "12938",
+        "category": "camisas hombre UrbaNOT top",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/pokerBeigefront.webp",
+                "back": "../dataBase/pokerBeigeBack.webp",
+                "hexa": "#000"
+            },
+            "color2": {
+                "front": "../dataBase/pokerBlackfront.webp",
+                "back": "../dataBase/pokerBlackBack.webp",
+                "hexa": "#e8e5cf"
+            }
+        }
+    },
+    {
+        "id": "playeraEstamp",
+        "title": "Camisa Estamp",
+        "marca": "UrbaNOT",
+        "price": 179.00,
+        "descripcion": "Camisa estampado negro",
+        "codigo": 12923,
+        "category": "camisas hombre UrbaNOT top",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/estampBlackFront.webp",
+                "back": "../dataBase/estampBlackBack.webp",
+                "hexa": "#000"
+            }
+        }
+    },
+    {
+        "id":"camisa lisa",
+        "title":"Camisa lisa Urban",
+        "marca":"UrbaNOT",
+        "price":289.00,
+        "descripcion":"Camisa lisa sin estampado",
+        "category":"camisas hombre UrbaNOT top",
+        "url":"/articuloIndividual/html/articuloIndividual.html",
+        "colors":{
+            "color1":{
+                "front":"../dataBase/camisaWhiteFront.png",
+                "back":"../dataBase/camisaWhiteBack.png",
+                "hexa":"#fff"
+            },
+            "color2":{
+                "front":"../dataBase/camisaBlackFront.png",
+                "back":"../dataBase/camisaBlackBack.png",
+                "hexa":"#000"
+            },
+            "color3":{
+                "front":"../dataBase/camisaBlueFront.png",
+                "back":"../dataBase/camisaBlueBack.png",
+                "hexa":"#039"
+            }
+        }
+    },
+    {
+        "id": "playeraFlor",
+        "title": "Camisa floreada",
+        "marca": "UrbaNOT",
+        "price": 159.00,
+        "descripcion": "Camisa floreada hombre",
+        "codigo": "12922",
+        "category": "camisas hombre UrbaNOT top",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/floresRedFront.webp",
+                "back": "../dataBase/floresRedBack.webp",
+                "hexa": "linear-gradient(90deg, rgba(252,25,9,1) 0%, rgba(8,8,8,1) 100%)"
+            },
+            "color2": {
+                "front": "../dataBase/floresBlueFront.webp",
+                "back": "../dataBase/floresBlueBack.webp",
+                "hexa": "linear-gradient(90deg, rgba(0,31,255,1) 0%, rgba(8,8,8,1) 70%)"
+            },
+            "color3": {
+                "front": "../dataBase/floresWhiteFront.webp",
+                "back": "../dataBase/floresWhiteBack.webp",
+                "hexa": " linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 70%)"
+            }
+        }
+    },
+    {
+        "id": "top Estamp",
+        "title": "Top Estampado",
+        "marca": "JSPenny",
+        "price": 210.00,
+        "descripcion": "Top estampado de colores",
+        "codigo": "45234",
+        "category": "mujer JSPenny top",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/topBlackFront.webp",
+                "back": "../dataBase/topBlackBack.webp",
+                "hexa": "#000"
+            },
+            "color2": {
+                "front": "../dataBase/topBlueFront.webp",
+                "back": "../dataBase/topBlueBack.webp",
+                "hexa": "#042F85"
+            }
+        }
+    },
+    {
+        "id": "jeans",
+        "title": "Jeans",
+        "marca": "JSPenny",
+        "price": 300.00,
+        "descripcion": "Jeans Mujer",
+        "codigo": "45246",
+        "category": "mujer JSPenny bottom",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/jeansBlueFront.webp",
+                "back": "../dataBase/jeansBlueBack.webp",
+                "hexa": "#042F85"
+            },
+            "color2": {
+                "front": "../dataBase/jeansBlackFront.webp",
+                "back": "../dataBase/jeansBlackBack.webp",
+                "hexa": "#000"
+            }
+        }
+    },
+    {
+        "id": "blouse chart",
+        "title": "Blusa a cuadros",
+        "marca": "JSPenny",
+        "price": 170.00,
+        "descripcion": "Blusa a cuadros",
+        "codigo": "45098",
+        "category": "mujer JSPenny top ",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/blouseOrangeFront.webp",
+                "back": "../dataBase/blouseOrangeBack.webp",
+                "hexa": "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(247,113,2,1) 100%)"
+            },
+            "color2": {
+                "front": "../dataBase/blouseGreenFront.webp",
+                "back": "../dataBase/blouseGreenBack.webp",
+                "hexa": "linear-gradient(90deg, rgba(13,32,45,1) 0%, rgba(36,193,0,1) 100%)"
+            }
+        }
+    },
+    {
+        "id": "blouseTop",
+        "title": "Blusa top",
+        "marca": "JSPenny",
+        "price": 200.00,
+        "descripcion": "Blusa a cuadros",
+        "codigo": "45675",
+        "category": "mujer JSPenny  top",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/blouseTopFront.webp",
+                "back": "../dataBase/blouseTopBack.webp"
+            }
+        }
+    },
+    {
+        "id": "collarMoney",
+        "title": "String Money",
+        "marca": "Javucci",
+        "price": 400.00,
+        "descripcion": "Colar lalalalal",
+        "codigo": "00923",
+        "category": "mujer Javucci  hombre accesorios ",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/collarMoneyFront.webp",
+                "back": "../dataBase/collarMoneyBackwebp.webp",
+                "hexa":"#080"
+            }
+        }
+    },
+    {
+        "id": "capHappy",
+        "title": "Cap Happy",
+        "marca": "Javucci",
+        "price": 300.00,
+        "descripcion": "Cap hapy lalala",
+        "codigo": "00853",
+        "category": "mujer Javucci hombre accesorios ",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/capHappyFront.webp",
+                "back": "../dataBase/capHappyBack.webp",
+                "hexa":"#000"
+            }
+        }
+    },
+    {
+        "id": "diademasPerlas",
+        "title": "Set Diademas Perlas",
+        "marca": "Javucci",
+        "price": 350.00,
+        "descripcion": "Diademas perlas lalala",
+        "codigo": "00472",
+        "category": "mujer Javucci accesorios ",
+        "url":"#",
+        "colors": {
+            "color1": {
+                "front": "../dataBase/diademaPerlasFront.webp",
+                "back": "../dataBase/diademaPerlasBack.webp",
+                "hexa":"#fff"
+            }
+        }
+    }
+]

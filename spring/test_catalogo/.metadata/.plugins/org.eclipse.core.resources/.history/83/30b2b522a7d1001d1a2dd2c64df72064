@@ -1,0 +1,61 @@
+package generation.javongus.html.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import generation.javongus.html.model.Usuario;
+import generation.javongus.html.repository.UsuarioRepository;
+
+public class UsuarioServices {
+//	Instancia
+	private final UsuarioRepository usuarioRe;
+
+	@Autowired
+	public UsuarioServices(UsuarioRepository usuarioRe) {
+		this.usuarioRe = usuarioRe;
+	}
+	
+//	CREATE
+	public void crearUsuario(Usuario usuario) {
+		Optional <Usuario> usuarioByCorreo = 
+				usuarioRe.findByCorreo(usuario.getCorreo());
+		if (usuarioByCorreo.isPresent()) {
+			throw new IllegalStateException("No se puede repetir el correo");
+		}else {
+			usuarioRe.save(usuario);
+		}
+
+	}
+	
+//	READ
+	public List<Usuario> leerUsuarios() {
+		return usuarioRe.findAll();
+	}
+	public Usuario leerProducto(Long id) {
+		return usuarioRe.findById(id).orElseThrow(()-> new IllegalStateException("El usuario"
+				+ "con el id" +id+  " no existe"));
+	}
+	
+//	UPDATE
+	public void actualizarProducto(Long userId,String nombre, String apellido, String correo, String password,
+			String telefono) {
+		if(usuarioRe.existsById(userId)) {
+//			Esta onda es una función vieja que talvez no se debería de usar
+			@SuppressWarnings("deprecation")
+			Usuario usuarioABuscar = usuarioRe.getById(userId);
+			if(nombre!= null) usuarioABuscar.setNombre(nombre);
+			if(apellido!= null) usuarioABuscar.setNombre(apellido);
+			if(correo!= null) usuarioABuscar.setNombre(correo);
+			if(password!= null) usuarioABuscar.setNombre(password);
+			if(telefono!= null) usuarioABuscar.setNombre(telefono);
+			
+	        usuarioRe.save(usuarioABuscar);
+
+		}else {
+			System.out.println("El producto con el id "+prodId+" no existe");
+		}
+	}
+	
+}

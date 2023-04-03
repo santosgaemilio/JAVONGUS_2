@@ -1,0 +1,33 @@
+package generation.javongus.html.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import generation.javongus.html.model.Direccion;
+import generation.javongus.html.repository.DireccionRepository;
+
+public class DireccionServices {
+//	Instancia
+	private final DireccionRepository direccionRe;
+
+	@Autowired
+	public DireccionServices(DireccionRepository direccionRe) {
+		this.direccionRe = direccionRe;
+	}
+	
+//	CREATE
+	public void crearDireccion(Direccion direccion) {
+		direccionRe.save(direccion);
+	}
+	
+//	READ
+	public List<Direccion> leerDirecciones() {
+		return direccionRe.findAll();
+	}
+	public Direccion leerDireccion(Long id) {
+		return direccionRe.findById(id).orElseThrow(()-> new IllegalStateException("La direccion "
+				+ "con el id " +id+  " no existe"));
+	}
+	
+}
