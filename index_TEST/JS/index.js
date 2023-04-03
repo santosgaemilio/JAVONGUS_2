@@ -164,46 +164,46 @@ function media(){
         case 0:
             if(getWidth()<1300){
                 // Cambia tanto como la imagen, como la posición del botón de ver más, como la imagen del modular
-                img_urb.src = "./imgs/urba6.png"
+                img_urb.src = "./index_TEST/imgs/urba6.png"
                 btMore.style.left = "40%"
-                ht.src = "./imgs/html3.png"
+                ht.src = "./index_TEST/imgs/html3.png"
                 footer.classList.remove("row")
                 footer.classList.add("flex-row")
             }else{
                 // Regresa todo a como está originalmente
-                img_urb.src = "./imgs/urba4.png"
+                img_urb.src = "./index_TEST/imgs/urba4.png"
                 btMore.style.left = "47%"
-                ht.src = "./imgs/html2.png"
+                ht.src = "./index_TEST/imgs/html2.png"
                 footer.classList.remove("flex-row")
                 footer.classList.add("row")
             }
             break;
         case 1:
             if(getWidth()<1300){
-                img_jav.src = "./imgs/javucci4.png"
+                img_jav.src = "./index_TEST/imgs/javucci4.png"
                 btMore.style.left = "40%"
-                ht.src = "./imgs/html3.png"
+                ht.src = "./index_TEST/imgs/html3.png"
                 footer.classList.remove("row")
                 footer.classList.add("flex-row")
             }else{
-                img_jav.src = "./imgs/javucci.png"
+                img_jav.src = "./index_TEST/imgs/javucci.png"
                 btMore.style.left = "47%"
-                ht.src = "./imgs/html2.png"
+                ht.src = "./index_TEST/imgs/html2.png"
                 footer.classList.remove("flex-row")
                 footer.classList.add("row")
             }
             break;
         case 2:
             if(getWidth()<1300){
-                img_js.src = "./imgs/jspenny2.png"
+                img_js.src = "./index_TEST/imgs/jspenny2.png"
                 btMore.style.left = "40%"
-                ht.src = "./imgs/html3.png"
+                ht.src = "./index_TEST/imgs/html3.png"
                 footer.classList.remove("row")
                 footer.classList.add("flex-row")
             }else{
-                img_js.src = "./imgs/jspenny.png"
+                img_js.src = "./index_TEST/imgs/jspenny.png"
                 btMore.style.left = "47%"
-                ht.src = "./imgs/html2.png"
+                ht.src = "./index_TEST/imgs/html2.png"
                 footer.classList.remove("flex-row")
                 footer.classList.add("row")
             }
