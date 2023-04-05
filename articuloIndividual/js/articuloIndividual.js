@@ -55,11 +55,11 @@ const writeProd=()=>{
   }else{document.getElementById('circleCont').remove}
 }
 const changeColor=(item)=>{
-  document.getElementById('MainImg').src="/Catalogo"+(item.imagen_front).slice(2)
-  document.getElementById("img1").src="/Catalogo"+(item.imagen_front).slice(2)
-  document.getElementById("img2").src="/Catalogo"+(item.imagen_back).slice(2)
-  if(item.imagen_left!=null){document.getElementById("img3").src="/Catalogo"+(item.imagen_left).slice(2)}
-  if(item.imagen_right!=null){document.getElementById("img4").src="/Catalogo"+(item.imagen_right).slice(2)}
+  document.getElementById('MainImg').src="../../Catalogo"+(item.imagen_front).slice(2)
+  document.getElementById("img1").src="../../Catalogo"+(item.imagen_front).slice(2)
+  document.getElementById("img2").src="../../Catalogo"+(item.imagen_back).slice(2)
+  if(item.imagen_left!=null){document.getElementById("img3").src="../../Catalogo"+(item.imagen_left).slice(2)}
+  if(item.imagen_right!=null){document.getElementById("img4").src="../../Catalogo"+(item.imagen_right).slice(2)}
 }
 
 window.addEventListener('load',load)
