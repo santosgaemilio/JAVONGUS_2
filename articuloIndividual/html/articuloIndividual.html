@@ -132,8 +132,10 @@
                     <li class="nav-item col-6 col-md-auto p-3">
                         <!-- lo que los col hacen es que ahuevo sea micha y micha -->
                         <!-- el flex row es pa que cambien de row sin pedos -->
-                        <i class="bi bi-cart fa-2x navi_i" style="font-size: 1.2rem;"></i>
-                        <small class="ms-2 navi">6</small>
+                        <a href="/Carrito/pags/carrito.html" style="text-decoration: none;color: inherit" class="d-flex"> <!-- Agrega la clase "d-flex" aquí -->
+                            <i class="bi bi-cart fa-2x navi_i" style="font-size: 1.2rem;"></i>
+                            <small class="ms-2 navi">6</small>
+                        </a>
                     </li>
                     <!-- Login thingy -------------------------------------------------------------- -->
                     <li class="nav-item col-6 col-md-auto p-3">
@@ -141,9 +143,6 @@
                         <button type="" class="" data-bs-toggle="modal" data-bs-target="#exampleModal2" id="login">
                             <i class="bi bi-person-circle navi_i" style="font-size: 1.2rem;"></i>
                         </button>
-
-
-
                     </li>
                     <!--  ----------------------------------------------------------------------------->
                 </ul>
@@ -219,32 +218,31 @@
         <!--TODO Galeria parte izquierda -->
         <div class="row mt-5">
             <div class="col-lg-5 col-md-12 col-12">
-                <img class="img-fluid w-100 pb-1" src="../img/camisa4c/1_white.png" id="MainImg" alt="">
+                <img class="img-fluid w-100 pb-1" src='' id="MainImg" alt="" >
 
                 <div class="small-img-group">
                     <!--TODO imagen pequeña 1 -->
                     <div class="small-img-col">
-                        <img src="../img/camisa4c/1_white.png" width="100%" class="small-img" alt="">
+                        <img src="" width="100%" class="small-img" alt="" id="img1">
                     </div>
                     <!--TODO imagen pequeña 2 -->
                     <div class="small-img-col">
-                        <img src="../img/camisa4c/2_white.png" width="100%" class="small-img" alt="">
+                        <img src="" width="100%" class="small-img" alt="" id="img2">
                     </div>
                     <!--TODO imagen pequeña 3 -->
                     <div class="small-img-col">
-                        <img src="../img/camisa4c/3_white.png" width="100%" class="small-img" alt="">
+                        <img src="" width="100%" class="small-img" alt="" id="img3">
                     </div>
                     <!--TODO imagen pequeña 4 -->
                     <div class="small-img-col">
-                        <img src="../img/camisa4c/4_white.png" width="100%" class="small-img" alt="">
+                        <img src="" width="100%" class="small-img" alt="" id="img4">
                     </div>
                 </div>
             </div>
             <!--TODO Informacion galeria parte derecha -->
             <div class="col-lg-6 col-md-12 col-12">
-                <h5>Marca: urbaNOT</h5>
-                <h3>Camisa solida sin estampado de algodón transpirable</h3>
-                <h6 class="mt-5 mb-0">SKU: PLAYS3C001</h6>
+                <h5 id="marca"></h5>
+                <h3 id="title"></h3>
                 <div class="starsAndReviews">
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -258,17 +256,12 @@
                     </div>
                 </div>
                 <hr class="mt-0">
-                <h2>$289.00</h2>
+                <h2 id="price"></h2>
 
                 <!--TODO agregar colores interactivos -->
-                <div class="color-content">
+                <div class="color-content" id="circleCont">
                     <h3>select color</h3>
-                    <div class="color-groups">
-                        <div class="color color-white active-color"></div>
-                        <div class="color color-black "></div>
-                        <div class="color color-yellow"></div>
-                        <div class="color color-blue"></div>
-                        <div class="color color-red"></div>
+                    <div class="color-groups" id="colorCont">
 
                     </div>
                 </div>
@@ -338,7 +331,7 @@
 
                 <!-- termina guia de talla -->
 
-                <button class="buy-btn"><a href="../../Carrito/pags/carrito.html"
+                <button class="buy-btn" id="aggCar"><a href="../../Carrito/pags/carrito.html"
                         style="text-decoration: none; color: inherit;">Añadir a carrito</a></button>
                 <!--* Detalles de envio y garantia -->
 
