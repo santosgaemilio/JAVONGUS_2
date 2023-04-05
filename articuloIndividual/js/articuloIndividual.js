@@ -102,7 +102,7 @@ const adicion=()=>{
     
   })
   alert("Producto agregado al carrito")
-  }, 500);
+  }, 1000);
 }
 document.getElementById("aggCar").addEventListener("click", (e)=>{
   e.preventDefault()
