@@ -35,10 +35,21 @@ const write=()=>{
         cont.append(container)
     }
 }
+const cantidad=()=>{
+    document.getElementById('cantidad').innerHTML=(datos.length)
+  }
+const total=()=>{
+    let price;
+    for(p of datos){
+        price+=p.price
+    }
+    document.getElementById('price').innerHTML=(`$${price}`)
+}
 window.addEventListener('load', e=>{
     setTimeout(() => {
-   
-            write()
+        total()   
+        datos()
+        write()
         
         
     }, 2000);
