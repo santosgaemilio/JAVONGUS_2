@@ -92,7 +92,6 @@ const adicion=()=>{
   getCarrito()
   console.log(id)
   setTimeout(() => {
-    if(id===undefined){crearCarrito()}
   fetch(`https://javongus-back-production.up.railway.app/html/carrito/add/${id}?cantidad=1&productoId=${jsonData.id}`, {
     method: 'PUT',
     headers: {
