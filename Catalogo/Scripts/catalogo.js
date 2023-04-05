@@ -73,7 +73,10 @@ const buildCard=item=>{
                 dirigir(e)
             })
             title.classList.add('dir')
-            title.href="../../articuloIndividual/html/articuloIndividual.html"
+            title.addEventListener('click', e=>{
+                e.preventDefault()
+                location='https://santosgaemilio.github.io/JAVONGUS_2/articuloIndividual/html/articuloIndividual.html'
+            })
             //Adicion de los elementos al DOM
             description.append(price, brand)
             divTitle.append(title)
