@@ -73,7 +73,7 @@ const buildCard=item=>{
                 dirigir(e)
             })
             title.classList.add('dir')
-            title.href="/articuloIndividual/html/articuloIndividual.html"
+            title.href="../../articuloIndividual/html/articuloIndividual.html"
             //Adicion de los elementos al DOM
             description.append(price, brand)
             divTitle.append(title)
