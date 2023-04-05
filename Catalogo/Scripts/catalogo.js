@@ -156,7 +156,7 @@ const drawCircle=(iitem, divcol,id)=>{
     circle.classList.add('circle')
     let back=iitem.imagen_back
     let front=iitem.imagen_front
-    circle.style.background=(`#${iitem.hexa}`)
+    circle.style.background=(`${iitem.hexa}`)
     console.log(iitem.hexa)
     circle.addEventListener('click', ()=>{changeColor(`${id}`, front, back)})
     divcol.append(circle)

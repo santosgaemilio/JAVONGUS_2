@@ -44,7 +44,9 @@ const writeProd=()=>{
   if(jsonData.estilos.length>1){
     for(items of jsonData.estilos){
       let circle=document.createElement('div')
-      circle.style.backgroundColor=(`${items.hexa}`)
+      circle.style.background=(`${items.hexa}`)
+      circle.style.border='solid'
+      console.log(jsonData.id)
       circle.classList.add('color')
       let obj=items
       circle.addEventListener('click',e=>{changeColor(obj)})
@@ -64,7 +66,7 @@ window.addEventListener('load',load)
 window.addEventListener('load',e=>{
   setTimeout(() => {
     writeProd()
-  }, 500);
+  }, 800);
 })
 let id
 const getCarrito=()=>{
@@ -73,7 +75,6 @@ const getCarrito=()=>{
     .then(data => {
     if(data.length>0){
       id=(data[0].id)
-      console.log(id)
     }
 });
 }
@@ -89,6 +90,7 @@ const crearCarrito=()=>{
 }
 const adicion=()=>{
   getCarrito()
+  console.log(id)
   setTimeout(() => {
     if(id===undefined){crearCarrito()}
   fetch(`https://javongus-back-production.up.railway.app/html/carrito/add/${id}?cantidad=1&productoId=${jsonData.id}`, {
@@ -97,7 +99,13 @@ const adicion=()=>{
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({})
+    
   })
+  console.log("Prod agregado")
   }, 500);
 }
-document.getElementById("aggCar").addEventListener("click", adicion)
+document.getElementById("aggCar").addEventListener("click", (e)=>{
+  e.preventDefault()
+  adicion()
+})
+
