@@ -36,7 +36,6 @@ const write=()=>{
     }
 }
 window.addEventListener('load', e=>{
-   dow
     setTimeout(() => {
         do {
             write()
