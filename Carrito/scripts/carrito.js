@@ -37,9 +37,9 @@ const write=()=>{
 }
 window.addEventListener('load', e=>{
     setTimeout(() => {
-        do {
+   
             write()
-        } while (datos!=null);
         
-    }, 1000);
+        
+    }, 2000);
 })
