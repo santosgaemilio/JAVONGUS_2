@@ -101,7 +101,7 @@ const adicion=()=>{
     body: JSON.stringify({})
     
   })
-  console.log("Prod agregado")
+  alert("Producto agregado al carrito")
   }, 500);
 }
 document.getElementById("aggCar").addEventListener("click", (e)=>{

@@ -5,6 +5,8 @@ fetch("https://javongus-back-production.up.railway.app/html/carrito/")
     datos = data;
 });
 const write=()=>{
+    do(datos!=null)
+    while{
     for(item of datos[0].carritoProducto){
         console.log(item.producto.estilos)
         let container=document.createElement('div')
@@ -36,8 +38,11 @@ const write=()=>{
     }
 }
 window.addEventListener('load', e=>{
+   dow
     setTimeout(() => {
+        do {
+            write()
+        } while (datos!=null);
         
-        write()
-    }, 4000);
+    }, 1000);
 })
