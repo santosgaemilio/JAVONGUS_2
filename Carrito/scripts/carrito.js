@@ -41,8 +41,8 @@ const cantidad=()=>{
   let price=0;
 const total=()=>{
    
-    for(p of datos){
-        price+=p.precio
+    for(p of datos[0].carritoProducto){
+        price+=p.producto.precio
     }
     document.getElementById('price').innerHTML=(`$${price}`)
 }
