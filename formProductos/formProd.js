@@ -56,7 +56,7 @@ submitP.addEventListener('click', e=>{
 submitE.addEventListener("click",getDataE)
 submitE.addEventListener('click', e=>{
     e.preventDefault()
-    upload(dataEstyle, "https://javongus-back-production.up.railway.app/html/estilo")
+    upload(dataEstyle, "https://javongus-back-production.up.railway.app/html/estilo/")
     let id;
     setTimeout(() => {
            fetch('https://javongus-back-production.up.railway.app/html/estilo/last')
@@ -81,3 +81,12 @@ submitE.addEventListener('click', e=>{
           .catch(error => console.error(error));
     }, 1000);
 })
+
+
+const cleanFile=()=>{
+  document.getElementById('img1').value=''
+  document.getElementById('img2').value=''
+  document.getElementById('img3').value=''
+  document.getElementById('img4').value=''
+}
+window.addEventListener('load', cleanFile)
