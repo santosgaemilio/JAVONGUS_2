@@ -48,7 +48,7 @@ const total=()=>{
 window.addEventListener('load', e=>{
     setTimeout(() => {
         total()   
-        datos()
+        cantidad()
         write()
         
         
