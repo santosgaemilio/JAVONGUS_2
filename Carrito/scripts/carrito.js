@@ -38,10 +38,11 @@ const write=()=>{
 const cantidad=()=>{
     document.getElementById('cantidad').innerHTML=(datos.length)
   }
+  let price=0;
 const total=()=>{
-    let price;
+   
     for(p of datos){
-        price+=p.price
+        price+=p.precio
     }
     document.getElementById('price').innerHTML=(`$${price}`)
 }
