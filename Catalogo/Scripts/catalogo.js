@@ -1,20 +1,49 @@
 //Aqui se guardan los datos de la api en una variable
 let jsonData;
-fetch('../dataBase/datos.json')
+fetch('https://javongus-back-production.up.railway.app/html/producto/')
     .then(response => response.json())
     .then(data => {
     jsonData = data;
 });
 
 
-
+//Funcion para sacar la marca en funcion del numero que tiene en la base de datos
+const getBrand=(brand)=>{
+    switch (brand) {
+        case 1:
+            return 'UrbaNot'
+            break;
+        case 2:
+            return 'Javucci'
+            break
+        case 3:
+            return "JSPenny"
+            break
+        default:
+            break;
+    }
+}
+//Funcion para sacar el gender dependiendo de lo que diga la base de datos
+const getGender=item=>{
+    switch (item) {
+        case 1:
+            return 'hombre'
+            break;
+        case 2:
+            return 'mujer'
+            break
+        default:
+            break;
+    }
+}
 //Funcion para la creacion de elementos, el cual recibe dos parametros, uno para el tipo 
 //de elemento que queremos crear, y otro para la clase que se le dara 
-const buildElement=(element, clas)=>{
+ const buildElement=(element, clas)=>{
     let elemento=document.createElement(element)
     elemento.classList.add(clas)
     return elemento
 }
+
 //Funcion para la creacion de las tarjetas de productos
 let container=document.getElementById('section')
 const buildCard=item=>{
@@ -30,15 +59,21 @@ const buildCard=item=>{
             let brand=buildElement('p')
             imgB.draggable=false
             imgF.draggable=false
-            title.href=item.url
             //Adicion de atributos y texto a los elementos
-            price.innerHTML=`$${item.price}`
-            brand.innerHTML=`Marca ${item.marca}`
-            title.innerHTML=item.title
-            imgF.src=item.colors.color1.front
-            imgB.src=item.colors.color1.back
-            divIm.id=item.codigo
-            let id=item.codigo
+            price.innerHTML=`$${item.precio}`
+            brand.innerHTML=`Marca ${getBrand(item.marca_id)}`
+            title.innerHTML=item.nombre
+            imgF.src=item.estilos[0].imagen_front
+            imgB.src=item.estilos[0].imagen_back
+            divIm.id=item.id
+            let id=item.id
+            title.setAttribute("value", id)
+            title.addEventListener("click", e=>{
+                e.preventDefault()
+                dirigir(e)
+            })
+            title.classList.add('dir')
+            title.href="/articuloIndividual/html/articuloIndividual.html"
             //Adicion de los elementos al DOM
             description.append(price, brand)
             divTitle.append(title)
@@ -49,15 +84,16 @@ const buildCard=item=>{
             cardProduct.append(description)
             container.append(cardProduct)
             //Condicion para agregar las opciones de cambio de color
-            if(Object.keys(item.colors).length>1){
+            if(Object.keys(item.estilos).length>1){
                 let divColors=document.createElement('div')
                 //Loop para agregar todos los colores disponibles
-                for(colores in item.colors){
-                    drawCircle(item.colors[colores],divColors,id)
+                for(colores in item.estilos){
+                    drawCircle(item.estilos[colores],divColors,id)
                 }
                 divTitle.append(divColors)
             }
 }
+
 
 
 const agregarFiltro=(event)=>{
@@ -70,9 +106,16 @@ const agregarFiltro=(event)=>{
 
 let drops=document.querySelectorAll('.dropbrand')
 for(item of drops){
-    
     item.addEventListener('click', agregarFiltro)
 }
+
+//Function que guarda en el local storage el id
+const dirigir=(e)=>{
+    id=e.target.getAttribute("value")
+    localStorage.setItem("endpoint",id)
+    location.href=("/articuloIndividual/html/articuloIndividual.html")
+}
+
 
 
 const filtrar=()=>{
@@ -111,9 +154,10 @@ const changeColor=(nodo,srcFront,srcBack)=>{
 const drawCircle=(iitem, divcol,id)=>{
     let circle=document.createElement('div')
     circle.classList.add('circle')
-    let back=iitem.back
-    let front=iitem.front
-    circle.style.background=(`${iitem.hexa}`)
+    let back=iitem.imagen_back
+    let front=iitem.imagen_front
+    circle.style.background=(`#${iitem.hexa}`)
+    console.log(iitem.hexa)
     circle.addEventListener('click', ()=>{changeColor(`${id}`, front, back)})
     divcol.append(circle)
     circle.parentNode.childNodes[0].classList.add('selected')
@@ -167,10 +211,11 @@ const del=()=>{
 
 //Esta fuuncion permite insertar en el DOM los productos que cumplen con la condicion de los filtros
 const writeWithFilters=()=>{
-    let filters=filter()
     for(item of jsonData){
-            if(filter('.brand',item.category)&&filter('.gender',item.category)&&filter('.type', item.category)
-        &&(item.price>=Number(rangeMin.value)&&item.price<=Number(rangeMax.value))){
+        let marca =getBrand(item.marca_id)
+            if(filter('.brand',marca)&&filter('.gender',getGender(item.target))&&filter('.type', item.tipo)
+            &&(item.precio>=Number(rangeMin.value)&&item.precio<=Number(rangeMax.value))){
+            
             buildCard(item)
         }
     }
@@ -223,7 +268,7 @@ const filter=(clas,target)=>{
 //Aqui se le agregan a todos los inputs le funcion de filtrado, permite agregar tantos check box como sea neccesario
 let check=document.querySelectorAll('.check')
 for(let i=0;i<check.length;i++){
-    check[i].addEventListener('change', filter)
+   // check[i].addEventListener('change', filter)
     check[i].addEventListener('change', filtrar)
 }
 rangeMin.addEventListener("change",filtrar)
