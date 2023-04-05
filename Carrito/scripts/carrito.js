@@ -13,7 +13,7 @@ const write=()=>{
         <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 
             <a href="">
-                <img src="/Catalogo${(item.producto.estilos[0].imagen_front).slice(2)}" class="img-fluid imagenArticulo"
+                <img src="../../Catalogo${(item.producto.estilos[0].imagen_front).slice(2)}" class="img-fluid imagenArticulo"
                     alt="Responsive image">
             </a>
         </div>
