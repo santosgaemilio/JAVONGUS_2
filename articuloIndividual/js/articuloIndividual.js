@@ -33,11 +33,11 @@ const buildElement=(element, clas)=>{
 }
 let circleCont=document.getElementById("colorCont")
 const writeProd=()=>{
-  document.getElementById('MainImg').src="/Catalogo"+(jsonData.estilos[0].imagen_front).slice(2)
-  document.getElementById("img1").src="/Catalogo"+(jsonData.estilos[0].imagen_front).slice(2)
-  document.getElementById("img2").src="/Catalogo"+(jsonData.estilos[0].imagen_back).slice(2)
-  if(jsonData.estilos[0].imagen_left!=null){document.getElementById("img3").src="/Catalogo"+(jsonData.estilos[0].imagen_left).slice(2)}
-  if(jsonData.estilos[0].imagen_right!=null){document.getElementById("img4").src="/Catalogo"+(jsonData.estilos[0].imagen_right).slice(2)}
+  document.getElementById('MainImg').src="../../Catalogo"+(jsonData.estilos[0].imagen_front).slice(2)
+  document.getElementById("img1").src="../..//Catalogo"+(jsonData.estilos[0].imagen_front).slice(2)
+  document.getElementById("img2").src="../..//Catalogo"+(jsonData.estilos[0].imagen_back).slice(2)
+  if(jsonData.estilos[0].imagen_left!=null){document.getElementById("img3").src="../../Catalogo"+(jsonData.estilos[0].imagen_left).slice(2)}
+  if(jsonData.estilos[0].imagen_right!=null){document.getElementById("img4").src="../../Catalogo"+(jsonData.estilos[0].imagen_right).slice(2)}
   document.getElementById('marca').innerHTML=(getBrand(jsonData.marca_id))
   document.getElementById('title').innerHTML=(jsonData.nombre)
   document.getElementById('price').innerHTML=("$"+jsonData.precio)
